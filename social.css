@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root{
+    --Very-Dark-Magenta: hsl(300 43% 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--White);
+    font-size: 15px;
+    font-family: 'League Spartan', sans-serif;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 3em 0;
+    width: 85%;
+    margin-inline: auto;
+    /* padding: 30em 0; */
+}
+
+.row-one{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    text-align: center;
+}
+h1{
+    color: var(--Very-Dark-Magenta);
+    font-size: 3rem;
+    font-weight: 700;
+    padding-bottom: .5em;
+}
+
+.describe{
+    color: var(--Very-Dark-Magenta);
+    margin-bottom: 2em;
+    line-height: 1.3em;
+    width: 95%;
+    font-weight: 400;
+}
+
+.stars{
+    background-color: var(--Light-Grayish-Magenta);
+    margin-bottom: 1em;
+    color: var(--Very-Dark-Magenta);
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.stars p{
+    margin-top: .4em;
+}
+.star-wrap{
+    line-height: 2em;
+}
+
+.row-two section{
+    display: flex;
+    flex-direction: column;
+}
+
+.comments{
+    background-color: var(--Very-Dark-Magenta);
+    color: var(--White);
+    border-radius: 7px;
+    margin-bottom: 1em;
+    padding: 2em;
+    font-weight: 500;
+}
+.people{
+    display: flex;
+    line-height: 1em;
+    font-size: 1.2rem;
+}
+.people img{
+    width: 2.3em;
+    border-radius: 21px;
+    margin: 0 1em 1em 0;
+}
+span{
+    color:hsl(333, 80%, 67%);
+    font-weight: normal;
+}
+
+.thoughts{
+    line-height: 1.2em;
+    width: 91%;
+}
+
+@media (min-width: 1200px){
+    .wrapper{
+        width: 68%;
+        max-width: 1000px;
+    }
+    .row-one{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+    }
+
+    .heading{
+        text-align: left;
+        width: 28em;
+    }
+
+    .threes{
+        width: 32em;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .stars{
+        display: flex;
+        justify-content: space-around;
+        border-radius: 5px;
+        width: 24em;
+        padding-inline: 2.3em;
+        /* width: 23em; */
+    }
+    #reviews{
+        align-self: flex-start;
+    }
+    #guru{
+        align-self: center;
+        width: auto;
+        margin-right: .7em;
+        width: 80%;
+    }
+    #bestTech{
+        align-self: flex-end;
+        width: 80%;
+    }
+    .row-two section{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+    }
+    .row-two{
+        margin-top: 1.5em;
+    }
+    .comments{
+        width: 21em;
+        height: 14em;
+    }
+    .thoughts {
+        line-height: 1.2em;
+        width: 103%;
+    }
+    .roberts{
+        margin-top: 1.2em;
+    }
+    .wallace{
+        margin-top: 3em;
+    }
+}   
+.attribution{
+    text-align: center;
+}
